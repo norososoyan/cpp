@@ -1,0 +1,11 @@
+#include <iostream>
+int numbers() {
+    int a, b;
+    std::cout << "Enter two numbers: ";
+    std::cin >> a >> b;  
+    return a + b;
+}
+int main() {
+    std::cout << "Sum: " << numbers() << std::endl;  
+    return 0;
+}
