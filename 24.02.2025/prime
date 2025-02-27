@@ -1,0 +1,24 @@
+#include <iostream>
+void prime() {
+  int n;
+  std::cout<<"Enter the number"<<std::endl;
+  std::cin>>n;
+  if (n < 2) {
+    std::cout<<"Invalid input";
+    return;
+  }
+  int i = 2;
+  while (i * i <= n) {
+    if (n % i == 0) {
+      std::cout<<"Not prime.";
+      return;
+    }
+    i++;
+  }
+  std::cout<<"Prime."<<std::endl;
+  
+}
+int main() {
+  prime();
+  return 0;
+}
