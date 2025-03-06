@@ -1,0 +1,2 @@
+#include <algorithm>
+sort(grades, grades + SIZE);
